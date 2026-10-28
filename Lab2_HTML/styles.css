@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    /* Колір тексту - темно-бургундський */
+    color: #4a1525;
+    /* Фоновий колір - дуже світлий відтінок сакури / кремовий */
+    background-color: #fdf6f8;
+}
+
+h1 {
+    /* Колір заголовка - глибокий бургунді / темна слива */
+    color: #3b0914;
+}
+
+h2 {
+    color: #5c1d2e;
+    border-bottom: 2px solid #e8b4bc;
+    /* Колір сакури */
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Стилі для посилань (колір сакури / насичений рожево-малиновий) */
+a {
+    color: #c75b7a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #9e3d5b;
+    text-decoration: underline;
+}
+
+/* Оформлення блоку з вашим фото */
+.photo-container img {
+    border-radius: 8px;
+    border: 3px solid #e8b4bc;
+    /* Рамка кольору сакури навколо фото */
+    box-shadow: 0 4px 10px rgba(74, 21, 37, 0.15);
+}
+
+ul {
+    line-height: 1.6;
+}
