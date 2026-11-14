@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Моя перша HTML-форма</title>
+  </head>
+  <body>
+    <h1>Моя перша HTML-форма</h1>
+
+    <form action="https://httpbin.org/post" method="POST">
+      <!-- Спосіб 1: Огортання тегу input тегом label -->
+      <label>
+        Ім'я:
+        <input type="text" name="user_name" />
+      </label>
+      <br /><br />
+
+      <!-- Спосіб 2: Використання атрибута id та for -->
+      <label for="birthdate">Дата народження:</label>
+      <input type="date" id="birthdate" name="user_birthdate" />
+      <br /><br />
+
+      <label>
+        Імейл:
+        <input type="email" name="user_email" />
+      </label>
+      <br /><br />
+
+      <label for="message">Повідомлення:</label>
+      <br />
+      <textarea id="message" name="user_message" rows="4" cols="30"></textarea>
+      <br /><br />
+
+      <div class="label1">
+        <p><b>Ваші улюблені напої?</b></p>
+        <label><input type="checkbox" name="drink" value="coffee" /> Кава</label
+        ><br />
+        <label><input type="checkbox" name="drink" value="tea" /> Чай</label
+        ><br />
+        <label><input type="checkbox" name="drink" value="juice" /> Сік</label
+        ><br />
+        <label><input type="checkbox" name="drink" value="water" /> Вода</label>
+      </div>
+
+      <div class="label2">
+        <p><b>Моя національність</b></p>
+        <label
+          ><input type="radio" name="nationality" value="ukrainian" /> Українець
+          / Українка</label
+        ><br />
+        <label
+          ><input type="radio" name="nationality" value="other" /> Інша</label
+        ><br />
+        <label
+          ><input type="radio" name="nationality" value="none" /> Не
+          вказано</label
+        >
+      </div>
+      <br /><br />
+
+      <button type="submit">Надіслати</button>
+      <button type="reset">Очистити</button>
+    </form>
+
+    <hr />
+
+    <h2>Адаптивне зображення</h2>
+    <picture>
+      <source
+        media="(max-width: 467px)"
+        srcset="https://picsum.photos/300/500"
+      />
+
+      <img
+        src="https://picsum.photos/1000/400"
+        alt="Демонстраційне зображення"
+      />
+    </picture>
+  </body>
+</html>
